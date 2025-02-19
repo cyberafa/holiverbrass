@@ -1,0 +1,12 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.button-group {
+  --container-display: flex;
+  --container-row-gap: #{size(2)};
+  --container-justify-content: space-evenly;
+
+  @include max($desktop) {
+    --container-direction: column;
+  }
+}

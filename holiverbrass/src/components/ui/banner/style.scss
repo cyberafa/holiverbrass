@@ -1,0 +1,48 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.banner {
+  position: relative;
+  height: 100%;
+
+  @include max($desktop) {
+    &-content {
+      left: 50%;
+    }
+  }
+
+  @include min($desktop) {
+    &.-right {
+      .banner-content {
+        right: 0;
+      }
+    }
+
+    &.-left {
+      .banner-content {
+        left: 0;
+      }
+    }
+
+    &.-center {
+      .banner-content {
+        left: 50%;
+      }
+    }
+  }
+
+  &-image {
+    height: 100%;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: size(8);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+}

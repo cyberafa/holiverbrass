@@ -1,0 +1,11 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.ui-grid-group {
+  display: flex;
+  column-gap: size(4);
+
+  @include max($desktop) {
+    flex-direction: column;
+  }
+}

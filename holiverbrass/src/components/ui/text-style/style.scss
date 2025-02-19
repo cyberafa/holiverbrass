@@ -1,0 +1,11 @@
+.ui-text-style {
+  color: var(--text-color);
+
+  &.-uppercase {
+    text-transform: uppercase;
+  }
+
+  &.-bold {
+    font-weight: var(--bold);
+  }
+}

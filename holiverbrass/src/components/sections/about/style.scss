@@ -1,0 +1,11 @@
+@import "@functions/size";
+
+.about {
+  --container-display: flex;
+  --container-direction: column;
+  --container-justify: center;
+  --container-row-gap: #{size(2)};
+  --container-align: center;
+
+  text-align: center;
+}

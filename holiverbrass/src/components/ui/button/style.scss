@@ -1,0 +1,34 @@
+@import "@functions/size";
+
+.ui-button {
+  all: unset;
+  display: inline-flex;
+  background-color: rgb(
+    var(--button-background, var(--default-button-background))
+  );
+  color: rgb(var(--button-color, var(--default-button-color)));
+  padding: size(8) size(3);
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border-radius: 2px;
+  column-gap: size(8);
+  position: relative;
+
+  &:not(:disabled):hover {
+    cursor: pointer;
+  }
+
+  &.-sm {
+    padding: size(10) size(5);
+    font-size: 0.9rem;
+  }
+
+  > &-image {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+}

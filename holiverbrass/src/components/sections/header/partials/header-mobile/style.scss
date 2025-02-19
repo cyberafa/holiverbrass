@@ -1,0 +1,29 @@
+.header-mobile {
+  &.-open .ui-menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 24px;
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    background-color: rgb(var(--body));
+    border-radius: 8px;
+    aspect-ratio: 1;
+
+    &-wrapper {
+      :nth-child(1) {
+        transform: rotate(45deg);
+      }
+
+      :nth-child(2) {
+        display: none;
+      }
+
+      :nth-child(3) {
+        position: absolute;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "@functions/size";
+
+.sidebar-body {
+  flex-grow: 1;
+
+  .ui-navigation {
+    flex-direction: column;
+    row-gap: size(1);
+  }
+}

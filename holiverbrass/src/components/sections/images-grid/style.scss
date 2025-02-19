@@ -1,0 +1,19 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.images-grid {
+  --container-display: grid;
+  --container-gap: #{size(3)};
+  --container-justify-items: center;
+  --container-align-items: center;
+
+  @include max($desktop) {
+    --container-direction: column;
+    --container-grid-columns: repeat(2, 1fr);
+  }
+
+  @include min($desktop) {
+    --container-grid-columns: repeat(3, 1fr);
+    --container-justify-content: space-between;
+  }
+}

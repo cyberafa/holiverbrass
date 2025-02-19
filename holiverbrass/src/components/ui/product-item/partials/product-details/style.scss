@@ -1,0 +1,60 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: size(2);
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: size(2);
+  }
+
+  &-title {
+    background-color: rgb(var(--primary));
+    color: rgb(var(--body));
+    padding: size(10) size(6);
+  }
+
+  &-model {
+    display: flex;
+    align-items: flex-start;
+    column-gap: size(3);
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      row-gap: size(3);
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-tech-features {
+    background-color: rgb(var(--gray));
+    display: flex;
+    flex-direction: column;
+    row-gap: size(3);
+
+    @include max($desktop) {
+      padding: size(2) size(2);
+    }
+
+    @include min($desktop) {
+      padding: size(2) size(1);
+    }
+
+    h3 {
+      margin-bottom: size(6);
+    }
+
+    ul {
+      text-decoration: solid;
+    }
+  }
+}

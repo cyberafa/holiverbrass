@@ -1,0 +1,20 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.footer-aux {
+  --container-display: flex;
+  --container-justify-content: space-between;
+  --container-row-gap: #{size(4)};
+  --icon-color: rgb(var(--secondary));
+
+  background-color: #212121;
+  padding: {
+    top: size(2);
+    bottom: size(2);
+  }
+
+  @include max($desktop) {
+    --container-direction: column;
+    --container-gap: #{size(4)};
+  }
+}

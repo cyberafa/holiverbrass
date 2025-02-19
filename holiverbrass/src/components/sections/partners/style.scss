@@ -1,0 +1,8 @@
+@import "@functions/size";
+
+.partners {
+  --container-display: grid;
+  --container-grid-columns: repeat(3, 1fr);
+  --container-gap: #{size(4)};
+  --container-justify: center;
+}

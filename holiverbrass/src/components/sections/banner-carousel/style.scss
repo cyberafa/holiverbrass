@@ -1,0 +1,64 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.banner-carousel {
+  --button-background: var(--highlight-color);
+
+  .splide__list {
+    > :first-child {
+      .banner-carousel-content {
+        @include max($desktop) {
+          top: 45%;
+        }
+
+        @include min($desktop) {
+          top: 70%;
+          max-width: 40%;
+        }
+      }
+
+      .banner-carousel-content-subtitle {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      .banner-carousel-content-subtitle,
+      .banner-carousel-content-text {
+        color: black !important;
+      }
+    }
+    > :last-child {
+      @include max($desktop) {
+        .banner-carousel-content {
+          top: 30%;
+        }
+      }
+    }
+  }
+
+  &-item {
+    text-align: center;
+    position: relative;
+
+    @include max($desktop) {
+      .banner-carousel-content {
+        left: 50%;
+        width: 90vw;
+      }
+    }
+
+    @include min($desktop) {
+      &.-left {
+        .banner-carousel-content {
+          left: 5%;
+        }
+      }
+
+      &.-right {
+        .banner-carousel-content {
+          right: 5%;
+        }
+      }
+    }
+  }
+}

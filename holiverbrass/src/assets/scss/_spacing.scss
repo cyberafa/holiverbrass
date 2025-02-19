@@ -1,0 +1,12 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+:root {
+  @include max($desktop) {
+    --spacing: 4rem;
+  }
+
+  @include min($desktop) {
+    --spacing: 5rem;
+  }
+}

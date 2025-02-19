@@ -1,0 +1,28 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.card-group {
+  --container-text-align: center;
+  --container-gap: #{size(4)};
+  --container-align-items: center;
+
+  &:not(.-grid) {
+    --container-display: flex;
+
+    @include max($desktop) {
+      --container-direction: column;
+    }
+  }
+
+  &.-grid {
+    --container-display: grid;
+
+    @include max($desktop) {
+      --container-grid-columns: repeat(2, 1fr);
+    }
+
+    @include min($desktop) {
+      --container-grid-columns: repeat(3, 1fr);
+    }
+  }
+}

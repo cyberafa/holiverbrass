@@ -1,0 +1,13 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.footer-aux-socials {
+  display: flex;
+  align-items: center;
+  color: rgb(var(--secondary));
+  column-gap: size(3);
+
+  @include max($desktop) {
+    justify-content: center;
+  }
+}

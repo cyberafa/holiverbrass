@@ -1,0 +1,6 @@
+.ui-link {
+  &:hover {
+    filter: brightness(1.05);
+    font-weight: 500;
+  }
+}

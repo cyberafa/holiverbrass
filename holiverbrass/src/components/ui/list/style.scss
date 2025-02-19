@@ -1,0 +1,15 @@
+@import "@functions/size";
+
+.ui-list {
+  background-color: rgb(var(--primary));
+  color: rgb(var(--body));
+
+  &-item {
+    padding: size(5) size(2);
+
+    &:hover {
+      cursor: pointer;
+      background-color: #000;
+    }
+  }
+}

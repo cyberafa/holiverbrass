@@ -1,0 +1,16 @@
+@import "@breakpoints";
+
+.map {
+  .map-iframe {
+    width: 100%;
+    border: none;
+
+    @include max($desktop) {
+      aspect-ratio: 2;
+    }
+
+    @include min($desktop) {
+      aspect-ratio: 3;
+    }
+  }
+}

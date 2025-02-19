@@ -1,0 +1,8 @@
+@import "@functions/size";
+
+.list {
+  --container-display: flex;
+  --container-direction: column;
+  --container-row-gap: #{size(2)};
+  --container-align-items: center;
+}

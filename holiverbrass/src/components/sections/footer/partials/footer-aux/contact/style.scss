@@ -1,0 +1,36 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.footer-aux-contact {
+  display: flex;
+  justify-content: space-between;
+
+  @include max($desktop) {
+    gap: size(8);
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  @include min($desktop) {
+    flex-direction: row;
+    gap: size(2);
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+
+    @include max($desktop) {
+      gap: size(6);
+    }
+
+    @include min($desktop) {
+      gap: size(10);
+    }
+
+    &-text {
+      color: rgb(var(--text-muted));
+    }
+  }
+}

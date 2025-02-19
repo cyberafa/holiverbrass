@@ -1,0 +1,10 @@
+#products {
+  .container-wrapper {
+    display: flex;
+    gap: size(2);
+
+    > :last-child {
+      flex-grow: 1;
+    }
+  }
+}

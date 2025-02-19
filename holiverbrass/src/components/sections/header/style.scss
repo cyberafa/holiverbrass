@@ -1,0 +1,19 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.header {
+  --container-display: flex;
+  --container-align-items: center;
+  --container-justify-content: space-between;
+
+  background-color: rgb(var(--body));
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: {
+    top: size(3);
+    bottom: size(3);
+  }
+}

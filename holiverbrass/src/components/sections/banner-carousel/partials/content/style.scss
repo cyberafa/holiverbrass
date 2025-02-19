@@ -1,0 +1,71 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.banner-carousel-content {
+  position: absolute;
+  top: 50%;
+
+  @include max($desktop) {
+    transform: translate(-50%, -50%);
+  }
+
+  @include min($desktop) {
+    transform: translateY(-50%);
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+
+    @include max($desktop) {
+      gap: size(5);
+    }
+
+    @include min($desktop) {
+      gap: size(6);
+    }
+  }
+
+  &-line {
+    display: block;
+    height: 2px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: rgb(var(--secondary));
+
+    @include min($desktop) {
+      /* margin: {
+        top: size(10);
+        bottom: size(10);
+      } */
+    }
+  }
+
+  &-title {
+    text-transform: uppercase;
+
+    @include max($desktop) {
+      font-size: 1.75rem;
+    }
+  }
+
+  &-subtitle {
+    color: rgb(var(--secondary));
+
+    @include max($desktop) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &-text {
+    @include max($desktop) {
+      font-size: 1rem;
+    }
+  }
+
+  &-text,
+  &-title {
+    color: #fff;
+  }
+}

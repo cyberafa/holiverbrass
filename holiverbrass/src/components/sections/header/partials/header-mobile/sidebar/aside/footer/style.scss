@@ -1,0 +1,7 @@
+@import "@breakpoints";
+
+.sidebar-footer .ui-link {
+  @include max($desktop) {
+    justify-content: center;
+  }
+}

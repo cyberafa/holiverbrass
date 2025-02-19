@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Categoria (1)",
+    "showSubcategories": false,
+    "subCategories": [
+      {
+        "name": "Sub-Categoria (1)"
+      },
+      {
+        "name": "Sub-Categoria (2)"
+      }
+    ]
+  },
+  {
+    "name": "Categoria (2)",
+    "showSubcategories": false,
+    "subCategories": [
+      {
+        "name": "Sub-Categoria (1)"
+      },
+      {
+        "name": "Sub-Categoria (2)"
+      }
+    ]
+  },
+  {
+    "name": "Categoria (3)",
+    "showSubcategories": false,
+    "subCategories": [
+      {
+        "name": "Sub-Categoria (1)"
+      },
+      {
+        "name": "Sub-Categoria (2)"
+      }
+    ]
+  },
+  {
+    "name": "Categoria (4)",
+    "showSubcategories": false,
+    "subCategories": [
+      {
+        "name": "Sub-Categoria (1)"
+      },
+      {
+        "name": "Sub-Categoria (2)"
+      }
+    ]
+  }
+]

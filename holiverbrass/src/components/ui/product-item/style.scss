@@ -1,0 +1,55 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.product-item {
+  display: flex;
+  width: 100%;
+  gap: size(2);
+  border: 1px solid #000;
+  padding: size(3);
+  align-items: center;
+  flex-direction: column;
+
+  @include max($desktop) {
+    flex-direction: column;
+  }
+
+  &.-open {
+    position: fixed;
+    overflow-y: auto;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    max-width: 80vw;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+  }
+
+  &-image {
+    @include min($desktop) {
+      max-width: 40%;
+    }
+  }
+
+  &-content {
+    text-align: left;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: size(4);
+    max-width: 100%;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: size(4);
+  }
+
+  &-name {
+    border-bottom: 2px solid var(--primary);
+  }
+}

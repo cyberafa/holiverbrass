@@ -1,0 +1,18 @@
+@import "@functions/size";
+
+.socials {
+  --container-display: flex;
+  --container-direction: column;
+  --container-row-gap: #{size(4)};
+
+  text-align: center;
+
+  &-icons {
+    --icon-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    gap: size(8);
+    color: rgb(var(--secondary));
+  }
+}

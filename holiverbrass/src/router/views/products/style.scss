@@ -1,0 +1,16 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+#main.products {
+  --container-display: flex;
+  --container-justify: space-between;
+  --container-gap: #{size(2)};
+
+  @include max($desktop) {
+    --container-direction: column;
+  }
+
+  .ui-showcase {
+    flex-grow: 1;
+  }
+}

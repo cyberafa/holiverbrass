@@ -1,0 +1,19 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.ui-card {
+  --text-color: rgb(var(--card-text-color));
+
+  display: flex;
+  flex-direction: column;
+
+  &-label {
+    display: flex;
+    background-color: rgb(var(--card-label-background));
+    justify-content: var(--card-label-justify, space-between);
+    align-items: center;
+    padding: size(var(--card-label-padding, 8));
+    gap: size(6);
+    font-size: 14px;
+  }
+}

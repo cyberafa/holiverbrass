@@ -1,0 +1,16 @@
+.ui-menu-icon {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    height: 24px;
+    justify-content: center;
+  }
+
+  &-bar {
+    background-color: black;
+    height: 4px;
+    width: 28px;
+    border-radius: 2px;
+  }
+}

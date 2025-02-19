@@ -1,0 +1,17 @@
+@import "@functions/size";
+
+.ui-showcase {
+  display: flex;
+  flex-direction: column;
+  row-gap: size(3);
+
+  &-header {
+    display: flex;
+    gap: size(2);
+  }
+
+  &-filter {
+    display: flex;
+    column-gap: size(8);
+  }
+}

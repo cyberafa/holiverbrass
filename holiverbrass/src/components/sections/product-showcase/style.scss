@@ -1,0 +1,7 @@
+@import "@functions/size";
+
+.product-showcase {
+  display: flex;
+  flex-direction: column;
+  row-gap: size(2);
+}

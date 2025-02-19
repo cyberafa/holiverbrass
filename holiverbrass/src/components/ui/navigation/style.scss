@@ -1,0 +1,11 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.ui-navigation {
+  display: flex;
+  align-items: center;
+
+  @include min($desktop) {
+    column-gap: size(1);
+  }
+}

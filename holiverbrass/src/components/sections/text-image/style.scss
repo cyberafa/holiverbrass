@@ -1,0 +1,30 @@
+@import "@functions/size";
+@import "@breakpoints";
+
+.text-image-group {
+  --container-display: flex;
+
+  @include max($desktop) {
+    --container-direction: column;
+    --container-row-gap: #{size(2)};
+  }
+
+  @include min($desktop) {
+    --container-align-items: center;
+    --container-justify-content: space-around;
+    --container-column-gap: #{size(2)};
+  }
+
+  .text-image-item {
+    row-gap: size(4);
+    column-gap: size(2);
+
+    &.-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
